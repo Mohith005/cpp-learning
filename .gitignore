@@ -1,6 +1,6 @@
 # Local VS Code configuration
 /.vscode/
-/.CSES_Problem_Set/
+/CSES_Problem_Set/
 
 # C++ compiled files
 *.exe
