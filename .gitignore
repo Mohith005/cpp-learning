@@ -1,0 +1,14 @@
+# Local VS Code configuration
+/.vscode/
+
+# C++ compiled files
+*.exe
+*.o
+*.obj
+
+# Personal workspace
+*.code-workspace
+
+# Add specific local-only files here
+/01_Basics/hello_world.cpp
+/01_Basics/PrintStandard.cpp
