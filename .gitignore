@@ -1,6 +1,7 @@
 # Local VS Code configuration
 /.vscode/
 /CSES_Problem_Set/
+/Randoms/
 
 # C++ compiled files
 *.exe
