@@ -1,6 +1,6 @@
 # C++ Learning
 
-My C++ learning journey, with small programs and exercises covering language fundamentals and sorting algorithms. I use this repository to practise concepts, experiment with code, and track my progress.
+My C++ learning journey, with small programs and exercises covering language fundamentals, sorting algorithms, and mini projects. I use this repository to practise concepts, experiment with code, and track my progress.
 
 ## Topics covered
 
@@ -10,6 +10,8 @@ My C++ learning journey, with small programs and exercises covering language fun
 - Basic use of strings, vectors, loops, and arrays
 - Bubble sort, insertion sort, and selection sort
 - Formatted output with `std::print` and `std::println`
+- Functions and declarations shared across multiple source files
+- Random numbers, game logic, and building projects with CMake
 
 ## Repository structure
 
@@ -25,10 +27,19 @@ cpp-learning/
 │   ├── bubble_sort.cpp
 │   ├── insertion_sort.cpp
 │   └── selection_sort.cpp
+├── 03_Mini_Projects/
+│   └── Roulette/
+│       ├── CMakeLists.txt
+│       ├── modi.cpp
+│       ├── random.cpp
+│       ├── roulette.cpp
+│       ├── shared.h
+│       ├── spiel.cpp
+│       └── README.md
 └── README.md
 ```
 
-Each `.cpp` file is a standalone program with its own `main()` function. Compile and run one file at a time.
+The examples in `01_Basics` and `02_Sorting_Algorithms` are standalone programs with their own `main()` functions. Compile and run one file at a time. Roulette combines several source files into one executable using CMake.
 
 ## Build and run
 
@@ -49,6 +60,25 @@ g++ -std=c++23 -Wall -Wextra -g 02_Sorting_Algorithms/bubble_sort.cpp -o bubble_
 ```
 
 The sorting examples use `<print>` and require a compiler and standard library that support C++23 `std::print` and `std::println`.
+
+### Roulette
+
+[Roulette](03_Mini_Projects/Roulette/README.md) is a console game with German prompts, a starting balance of 10,000, and bets on a color, column, or individual number.
+
+Build from the repository root with CMake and a compiler and standard library supporting C++23 `<print>`:
+
+```sh
+cmake -S 03_Mini_Projects/Roulette -B 03_Mini_Projects/Roulette/build
+cmake --build 03_Mini_Projects/Roulette/build
+```
+
+Run in WSL/Linux:
+
+```sh
+./03_Mini_Projects/Roulette/build/roulette2
+```
+
+See the project README for Windows commands, game rules, and current limitations.
 
 ## Learning notes
 
