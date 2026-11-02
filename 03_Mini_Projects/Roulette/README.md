@@ -50,7 +50,7 @@ cmake --build 03_Mini_Projects/Roulette/build --config Release
 
 - `roulette.cpp`: program entry point, starting balance, and repeat/exit prompts.
 - `spiel.cpp`: mode selection and wager validation.
-- `modi.cpp`: color, column, and single-number bets and payouts.
+- `functions.cpp`: color, column, and single-number bets and payouts.
 - `random.cpp`: random number generation from 0 through 36.
 - `shared.h`: shared function declarations and the balance declaration.
 - `CMakeLists.txt`: builds the four `.cpp` files into `roulette2`.
