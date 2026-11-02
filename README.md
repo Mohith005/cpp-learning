@@ -30,7 +30,7 @@ cpp-learning/
 ├── 03_Mini_Projects/
 │   └── Roulette/
 │       ├── CMakeLists.txt
-│       ├── modi.cpp
+│       ├── functions.cpp
 │       ├── random.cpp
 │       ├── roulette.cpp
 │       ├── shared.h
