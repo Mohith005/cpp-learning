@@ -2,7 +2,6 @@
 #include <print>
 #include "shared.h"
 
-
 int einsatz()
 {
     int bet{};
@@ -20,7 +19,6 @@ int einsatz()
     return bet;
 }
 
-
 void spiel()
 {
     char modi{};
@@ -33,41 +31,41 @@ void spiel()
 
         switch (modi)
         {
-            case 'f':
-            case 'F':
-            {
-                int bet{einsatz()};
-                const int random_num{getRandom(0, 36)};
-                rot_schwarz(random_num, bet);
-                loop = false;
-                break;
-            }
+        case 'f':
+        case 'F':
+        {
+            int bet{einsatz()};
+            const int random_num{getRandom(0, 36)};
+            rot_schwarz(random_num, bet);
+            loop = false;
+            break;
+        }
 
-            case 's':
-            case 'S':
-            {
-                int bet{einsatz()};
-                const int random_num{getRandom(0, 36)};
-                spalte(random_num, bet);
-                loop = false;
-                break;
-            }
+        case 's':
+        case 'S':
+        {
+            int bet{einsatz()};
+            const int random_num{getRandom(0, 36)};
+            spalte(random_num, bet);
+            loop = false;
+            break;
+        }
 
-            case 'z':
-            case 'Z':
-            {
-                int bet{einsatz()};
-                const int random_num{getRandom(0, 36)};
-                zahl(random_num, bet);
-                loop = false;
-                break;
-            }
+        case 'z':
+        case 'Z':
+        {
+            int bet{einsatz()};
+            const int random_num{getRandom(0, 36)};
+            zahl(random_num, bet);
+            loop = false;
+            break;
+        }
 
-            default:
-            {
-                std::println("Keine gueltige Eingabe. Bitte f/s/z eingeben:\n");
-                break;
-            }
+        default:
+        {
+            std::println("Keine gueltige Eingabe. Bitte f/s/z eingeben:\n");
+            break;
+        }
         }
     }
 
